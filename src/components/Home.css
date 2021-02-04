@@ -47,3 +47,24 @@
 .img:hover {
   opacity: 0.5;
 }
+
+.technos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.card-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: justify; */
+  height: 22rem;
+  width: 26rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}

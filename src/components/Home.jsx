@@ -1,43 +1,60 @@
+import { useState, useEffect } from "react";
+import { Spinner, Col } from "reactstrap";
+import axios from "axios";
 import "./Home.css";
-import { UncontrolledCarousel, Button } from "reactstrap";
+import { Button } from "reactstrap";
+import { AiFillGithub } from "react-icons/ai";
+import { FaGitAlt, FaReact, FaDev } from "react-icons/fa";
+import { BsBootstrapFill } from "react-icons/bs";
+import { SiJavascript } from "react-icons/si";
+import { SiVisualstudio } from "react-icons/si";
+import { RiMacbookLine } from "react-icons/ri";
 import img1 from "./images/img1.jpg";
 import img2 from "./images/img2.jpg";
 import img3 from "./images/img3.jpg";
 import img4 from "./images/img4.jpg";
 import img5 from "./images/img5.jpg";
 import img6 from "./images/img6.jpg";
+import img7 from "./images/img7.jpg";
+import img8 from "./images/img8.jpg";
 
 function Home() {
-  const items = [
-    {
-      src:
-        "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa1d%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa1d%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E",
-      altText: "Slide 1",
-      caption: "Slide 1",
-      header: "Slide 1 Header",
-      key: "1",
-    },
-    {
-      src:
-        "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E",
-      altText: "Slide 2",
-      caption: "Slide 2",
-      header: "Slide 2 Header",
-      key: "2",
-    },
-    {
-      src:
-        "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E",
-      altText: "Slide 3",
-      caption: "Slide 3",
-      header: "Slide 3 Header",
-      key: "3",
-    },
-  ];
+  const [skills, setSkills] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/api/v1/skill")
+      .then((res) => {
+        console.log(res.data);
+        setSkills(res.data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  if (loading) {
+    return (
+      <Col className="text-center">
+        <Spinner className="spinner" size="xl" />
+      </Col>
+    );
+  }
   return (
     <>
-      <div className="caroussel">
-        <UncontrolledCarousel items={items} />
+      <div className="photo-background">
+        <img
+          src={img7}
+          alt=""
+          style={{
+            width: "100%",
+            height: "80vh",
+            opacity: "0.9",
+            objectFit: "cover",
+          }}
+        />
       </div>
       <h1 className="title">Web Developper Junior React Js</h1>
       <p className="description">
@@ -52,10 +69,11 @@ function Home() {
       <div className="all-photo-link">
         <img
           className="img"
-          src={img1}
+          src={img8}
           alt=""
           style={{ width: "25rem", height: "18rem", marginRight: "1rem" }}
         />
+
         <img
           className="img"
           src={img2}
@@ -96,6 +114,57 @@ function Home() {
           alt=""
           style={{ width: "25rem", height: "18rem", marginTop: "1rem" }}
         />
+      </div>
+      <h1 style={{ marginTop: "5rem" }}>Techonologies</h1>
+      <div className="technos">
+        <div className="card-skill">
+          <FaReact size="3rem" />
+          <h4>{skills[0].name}</h4>
+          <p>
+            React is probably my favourite library for creating web pages. I
+            like its syntax and the possibilities it offers.
+          </p>
+        </div>
+        <div className="card-skill">
+          <AiFillGithub size="3rem" />
+          <h4>{skills[0].name}</h4>
+          <p>
+            GitHub allows me to keep track of my work, but also to coexist with
+            git, the control version.
+          </p>
+        </div>
+        <div className="card-skill">
+          <FaGitAlt size="3rem" />
+          <h4>{skills[0].name}</h4>
+          <p>
+            Git is a necessary tool for all developers today. It is impossible
+            for me not to work with it.
+          </p>
+        </div>
+        <div className="card-skill">
+          <SiJavascript size="3rem" />
+          <h4>{skills[0].name}</h4>
+          <p>
+            Javascript is my first programming language but also the one I know
+            best at the moment. I aspire to discover many languages in the
+            course of my professional life.
+          </p>
+        </div>
+        <div className="card-skill">
+          <RiMacbookLine size="3rem" />
+          <h4>{skills[0].name}</h4>
+          <p>
+            I most often work on Mac Os, but I also enjoy the Linux environment.
+          </p>
+        </div>
+        <div className="card-skill">
+          <BsBootstrapFill size="3rem" />
+          <h4>{skills[0].name}</h4>
+          <p>
+            Boostrap makes it possible to make an application responsive quickly
+            and to be able to focus on the functionality of the application.
+          </p>
+        </div>
       </div>
     </>
   );
