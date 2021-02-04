@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Button, CardTitle, CardText, Row, Col } from "reactstrap";
-import "./CardResume.css";
+import "./style/CardResume.css";
 
 const CardResume = ({ name, description }) => {
   return (

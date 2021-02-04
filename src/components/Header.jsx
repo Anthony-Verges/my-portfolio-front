@@ -14,7 +14,7 @@ import {
   DropdownItem,
 } from "reactstrap";
 
-import "./Header.css";
+import "./style/Header.css";
 
 const Header = ({ myName }) => {
   const [isOpen, setIsOpen] = useState(false);

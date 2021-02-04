@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Spinner, Col } from "reactstrap";
 import axios from "axios";
-import "./Home.css";
+import AboutMe from "./AboutMe.jsx";
+import "./style/Home.css";
 import { Button } from "reactstrap";
 import { AiFillGithub } from "react-icons/ai";
 import { FaGitAlt, FaReact, FaDev } from "react-icons/fa";
@@ -63,6 +64,7 @@ function Home() {
         open to any kind of project and opportunity that could help me to
         improve my skills.
       </p>
+
       <a href="mailto:verges_anthony@hotmail.fr">
         <Button className="contact">Contact Me</Button>
       </a>
@@ -115,7 +117,7 @@ function Home() {
           style={{ width: "25rem", height: "18rem", marginTop: "1rem" }}
         />
       </div>
-      <h1 style={{ marginTop: "5rem" }}>Techonologies</h1>
+      <h1 style={{ marginTop: "5rem", letterSpacing: "1px" }}>Techonologies</h1>
       <div className="technos">
         <div className="card-skill">
           <FaReact size="3rem" />
@@ -127,7 +129,7 @@ function Home() {
         </div>
         <div className="card-skill">
           <AiFillGithub size="3rem" />
-          <h4>{skills[0].name}</h4>
+          <h4>GitHub</h4>
           <p>
             GitHub allows me to keep track of my work, but also to coexist with
             git, the control version.
@@ -135,7 +137,7 @@ function Home() {
         </div>
         <div className="card-skill">
           <FaGitAlt size="3rem" />
-          <h4>{skills[0].name}</h4>
+          <h4>Git</h4>
           <p>
             Git is a necessary tool for all developers today. It is impossible
             for me not to work with it.
@@ -143,7 +145,7 @@ function Home() {
         </div>
         <div className="card-skill">
           <SiJavascript size="3rem" />
-          <h4>{skills[0].name}</h4>
+          <h4>Javascript Vanilla</h4>
           <p>
             Javascript is my first programming language but also the one I know
             best at the moment. I aspire to discover many languages in the
@@ -152,14 +154,14 @@ function Home() {
         </div>
         <div className="card-skill">
           <RiMacbookLine size="3rem" />
-          <h4>{skills[0].name}</h4>
+          <h4>Environment</h4>
           <p>
             I most often work on Mac Os, but I also enjoy the Linux environment.
           </p>
         </div>
         <div className="card-skill">
           <BsBootstrapFill size="3rem" />
-          <h4>{skills[0].name}</h4>
+          <h4>Boostrap</h4>
           <p>
             Boostrap makes it possible to make an application responsive quickly
             and to be able to focus on the functionality of the application.
