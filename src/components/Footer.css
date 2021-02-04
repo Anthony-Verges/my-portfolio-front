@@ -1,7 +1,8 @@
 .footer {
-  background-color: grey !important;
+  background-color: #1a1a1a !important;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-top: 7rem;
 }
 
 .social-reseaux {

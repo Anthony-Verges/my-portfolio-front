@@ -1,5 +1,11 @@
 .button-rasp {
-  background-color: pink;
+  background-color: #e6cd1b;
+  border-color: #e6cd1b;
   margin-right: 20%;
   margin-left: 20%;
+}
+
+.button-rasp:hover {
+  background-color: #eaac1c;
+  border-color: #eaac1c;
 }

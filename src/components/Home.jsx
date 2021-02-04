@@ -1,5 +1,4 @@
 import "./Home.css";
-import { Link } from "react-router-dom";
 import { UncontrolledCarousel, Button } from "reactstrap";
 import img1 from "./images/img1.jpg";
 import img2 from "./images/img2.jpg";
@@ -51,21 +50,52 @@ function Home() {
         <Button className="contact">Contact Me</Button>
       </a>
       <div className="all-photo-link">
-        <img src={img1} alt="" style={{ width: "30rem", height: "30rem" }} />
-        <img src={img2} alt="" style={{ width: "30rem", height: "30rem" }} />
-        <img src={img3} alt="" style={{ width: "30rem", height: "30rem" }} />
-        <img src={img4} alt="" style={{ width: "30rem", height: "30rem" }} />
-        <img src={img5} alt="" style={{ width: "30rem", height: "30rem" }} />
-        <img src={img6} alt="" style={{ width: "30rem", height: "30rem" }} />
-      </div>
-
-      <div buttons-naviguate-app>
-        <div>
-          <Link to="/resume">Resume</Link>
-        </div>
-        <div>
-          <Link to="/myportfolio">My portfolio</Link>
-        </div>
+        <img
+          className="img"
+          src={img1}
+          alt=""
+          style={{ width: "25rem", height: "18rem", marginRight: "1rem" }}
+        />
+        <img
+          className="img"
+          src={img2}
+          alt=""
+          style={{ width: "25rem", height: "18rem", marginRight: "1rem" }}
+        />
+        <img
+          className="img"
+          src={img3}
+          alt=""
+          style={{ width: "25rem", height: "18rem" }}
+        />
+        <img
+          className="img"
+          src={img4}
+          alt=""
+          style={{
+            width: "25rem",
+            height: "18rem",
+            marginRight: "1rem",
+            marginTop: "1rem",
+          }}
+        />
+        <img
+          className="img"
+          src={img5}
+          alt=""
+          style={{
+            width: "25rem",
+            height: "18rem",
+            marginRight: "1rem",
+            marginTop: "1rem",
+          }}
+        />
+        <img
+          className="img"
+          src={img6}
+          alt=""
+          style={{ width: "25rem", height: "18rem", marginTop: "1rem" }}
+        />
       </div>
     </>
   );

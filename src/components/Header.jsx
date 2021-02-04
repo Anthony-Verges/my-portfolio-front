@@ -35,7 +35,14 @@ const Header = ({ myName }) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink>My resume</NavLink>
+              <Link to="/myportfolio">
+                <NavLink>My portfolio</NavLink>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/resume">
+                <NavLink>My resume</NavLink>
+              </Link>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/Anthony-Verges">

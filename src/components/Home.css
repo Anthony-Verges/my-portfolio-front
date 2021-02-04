@@ -20,21 +20,30 @@
 .contact {
   color: white;
   letter-spacing: 2px;
-
-  width: 15rem;
+  width: 20rem;
+  height: 3rem;
 
   margin-top: 8rem;
   margin-bottom: 8rem;
-  background-color: #76b032;
-  border-color: #76b032;
+  background-color: #e6cd1b;
+  border-color: #e6cd1b;
 }
 .contact:hover {
-  background-color: #496923;
-  border-color: #496923;
+  background-color: #eaac1c;
+  border-color: #eaac1c;
 }
 
 .all-photo-link {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.img {
+  cursor: pointer;
+}
+
+.img:hover {
+  opacity: 0.5;
 }

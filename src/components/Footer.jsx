@@ -9,17 +9,11 @@ function Footer() {
       <div className="footer">
         <div className="social-reseaux">
           <NavLink href="https://www.linkedin.com/in/anthony-vergès">
-            <FaLinkedin style={{ color: "black", fontSize: "3rem" }} />
+            <FaLinkedin style={{ color: "#4A4A4A", fontSize: "2.5rem" }} />
           </NavLink>
           <NavLink href="https://github.com/Anthony-Verges">
-            <AiFillGithub style={{ color: "black", fontSize: "3rem" }} />
+            <AiFillGithub style={{ color: "#4A4A4A", fontSize: "2.5rem" }} />
           </NavLink>
-        </div>
-        <div className="join-me">
-          <h4>contact me</h4>
-          <a href="mailto:verges_anthony@hotmail.fr">
-            <h5>verges_anthony@hotmail.fr</h5>
-          </a>
         </div>
       </div>
     </>
