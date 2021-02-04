@@ -12,9 +12,8 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText,
 } from "reactstrap";
-// import antho from "./antho.png";
+
 import "./Header.css";
 
 const Header = ({ myName }) => {

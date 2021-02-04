@@ -1,6 +1,12 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
 import { UncontrolledCarousel, Button } from "reactstrap";
+import img1 from "./images/img1.jpg";
+import img2 from "./images/img2.jpg";
+import img3 from "./images/img3.jpg";
+import img4 from "./images/img4.jpg";
+import img5 from "./images/img5.jpg";
+import img6 from "./images/img6.jpg";
 
 function Home() {
   const items = [
@@ -42,8 +48,16 @@ function Home() {
         improve my skills.
       </p>
       <a href="mailto:verges_anthony@hotmail.fr">
-        <Button>Contact Me</Button>
+        <Button className="contact">Contact Me</Button>
       </a>
+      <div className="all-photo-link">
+        <img src={img1} alt="" style={{ width: "30rem", height: "30rem" }} />
+        <img src={img2} alt="" style={{ width: "30rem", height: "30rem" }} />
+        <img src={img3} alt="" style={{ width: "30rem", height: "30rem" }} />
+        <img src={img4} alt="" style={{ width: "30rem", height: "30rem" }} />
+        <img src={img5} alt="" style={{ width: "30rem", height: "30rem" }} />
+        <img src={img6} alt="" style={{ width: "30rem", height: "30rem" }} />
+      </div>
 
       <div buttons-naviguate-app>
         <div>

@@ -1,10 +1,12 @@
-.background {
+/* .background {
   background-image: url(backgroundImage.jpg);
   height: 90vh;
   opacity: 0.33;
-}
+} */
 .title {
-  letter-spacing: 1px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  letter-spacing: 2px;
 }
 .description {
   display: flex;
@@ -12,4 +14,27 @@
   margin-left: 20%;
   margin-right: 20%;
   letter-spacing: 1px;
+  margin-top: 5rem;
+}
+
+.contact {
+  color: white;
+  letter-spacing: 2px;
+
+  width: 15rem;
+
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  background-color: #76b032;
+  border-color: #76b032;
+}
+.contact:hover {
+  background-color: #496923;
+  border-color: #496923;
+}
+
+.all-photo-link {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
