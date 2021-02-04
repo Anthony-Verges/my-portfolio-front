@@ -1,0 +1,17 @@
+.photo-id {
+  overflow: hidden;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 120px;
+  width: 220px;
+  height: 310px;
+  /* box-shadow: 3px 3px 12px rgb(226, 226, 226); */
+}
+
+.col-10 {
+  background-image: url(backgroundImage.jpg);
+}
+
+.backgroundImage {
+  opacity: 0.33;
+}
