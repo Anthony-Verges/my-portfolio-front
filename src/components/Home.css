@@ -1,17 +1,15 @@
-.photo-id {
-  overflow: hidden;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 120px;
-  width: 220px;
-  height: 310px;
-  /* box-shadow: 3px 3px 12px rgb(226, 226, 226); */
-}
-
-.col-10 {
+.background {
   background-image: url(backgroundImage.jpg);
-}
-
-.backgroundImage {
+  height: 90vh;
   opacity: 0.33;
+}
+.title {
+  letter-spacing: 1px;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  letter-spacing: 1px;
 }

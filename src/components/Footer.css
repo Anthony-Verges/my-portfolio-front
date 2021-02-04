@@ -1,0 +1,16 @@
+.footer {
+  background-color: grey !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.social-reseaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
