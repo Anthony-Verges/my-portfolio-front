@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Spinner, Col } from "reactstrap";
+import { Spinner, Col, NavLink } from "reactstrap";
 import axios from "axios";
 import AboutMe from "./AboutMe.jsx";
 import "./style/Home.css";
@@ -74,15 +74,21 @@ function Home() {
         <Button className="contact">Contact Me</Button>
       </a>
       <div className="all-photo-link">
-        <div className="contenant">
-          <img
-            className="img"
-            src={img8}
-            alt=""
-            style={{ width: "25rem", height: "18rem", marginRight: "1rem" }}
-          />
-          <p className="texte-centrer">Raspberry Luxe version</p>
-        </div>
+        {/* <NavLink href="https://wildcodeschool.github.io/btz_p1_lux-raspi/index.html"> */}
+        <a href="https://wildcodeschool.github.io/btz_p1_lux-raspi/index.html">
+          <div className="contenant">
+            <img
+              className="img"
+              src={img8}
+              alt=""
+              style={{ width: "25rem", height: "18rem", marginRight: "1rem" }}
+            />
+            <p className="texte-centrer">Raspberry Luxe version</p>
+          </div>
+        </a>
+
+        {/* </NavLink> */}
+
         <div className="contenant">
           <img
             className="img"

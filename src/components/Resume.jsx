@@ -32,6 +32,7 @@ const Resume = () => {
             <CardResume
               name={item.name}
               description={item.description}
+              date={item.date}
               key={item.id}
             />
           );
