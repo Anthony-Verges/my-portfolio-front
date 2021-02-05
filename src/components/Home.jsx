@@ -18,6 +18,8 @@ import img5 from "./images/img5.jpg";
 import img6 from "./images/img6.jpg";
 import img7 from "./images/img7.jpg";
 import img8 from "./images/img8.jpg";
+import img9 from "./images/img9.jpg";
+import img10 from "./images/img10.jpg";
 
 function Home() {
   const [skills, setSkills] = useState([]);
@@ -47,7 +49,7 @@ function Home() {
     <>
       <div className="photo-background">
         <img
-          src={img7}
+          src={img10}
           alt=""
           style={{
             width: "100%",
@@ -56,8 +58,11 @@ function Home() {
             objectFit: "cover",
           }}
         />
+        <p className="texte-background">Anthony Vergès</p>
       </div>
+
       <h1 className="title">Web Developper Junior React Js</h1>
+      {/* <AboutMe /> */}
       <p className="description">
         Passionate about computers, I'm currently training at the Wild Code
         School in order to make a living from Web Development and web jobs. I am
@@ -69,53 +74,70 @@ function Home() {
         <Button className="contact">Contact Me</Button>
       </a>
       <div className="all-photo-link">
-        <img
-          className="img"
-          src={img8}
-          alt=""
-          style={{ width: "25rem", height: "18rem", marginRight: "1rem" }}
-        />
-
-        <img
-          className="img"
-          src={img2}
-          alt=""
-          style={{ width: "25rem", height: "18rem", marginRight: "1rem" }}
-        />
-        <img
-          className="img"
-          src={img3}
-          alt=""
-          style={{ width: "25rem", height: "18rem" }}
-        />
-        <img
-          className="img"
-          src={img4}
-          alt=""
-          style={{
-            width: "25rem",
-            height: "18rem",
-            marginRight: "1rem",
-            marginTop: "1rem",
-          }}
-        />
-        <img
-          className="img"
-          src={img5}
-          alt=""
-          style={{
-            width: "25rem",
-            height: "18rem",
-            marginRight: "1rem",
-            marginTop: "1rem",
-          }}
-        />
-        <img
-          className="img"
-          src={img6}
-          alt=""
-          style={{ width: "25rem", height: "18rem", marginTop: "1rem" }}
-        />
+        <div className="contenant">
+          <img
+            className="img"
+            src={img8}
+            alt=""
+            style={{ width: "25rem", height: "18rem", marginRight: "1rem" }}
+          />
+          <p className="texte-centrer">Raspberry Luxe version</p>
+        </div>
+        <div className="contenant">
+          <img
+            className="img"
+            src={img2}
+            alt=""
+            style={{ width: "25rem", height: "18rem", marginRight: "1rem" }}
+          />
+          <p className="texte-centrer">Wild Programmer Humor</p>
+        </div>
+        <div className="contenant">
+          <img
+            className="img"
+            src={img3}
+            alt=""
+            style={{ width: "25rem", height: "18rem" }}
+          />
+          <p className="texte-centrer">Follow the market</p>
+        </div>
+        <div className="contenant">
+          <img
+            className="img"
+            src={img4}
+            alt=""
+            style={{
+              width: "25rem",
+              height: "18rem",
+              marginRight: "1rem",
+              marginTop: "1rem",
+            }}
+          />
+          <p className="texte-centrer">Hackaton : BlaBlaCalèche</p>
+        </div>
+        <div className="contenant">
+          <img
+            className="img"
+            src={img5}
+            alt=""
+            style={{
+              width: "25rem",
+              height: "18rem",
+              marginRight: "1rem",
+              marginTop: "1rem",
+            }}
+          />
+          <p className="texte-centrer"> Hackaton : RoadBook</p>
+        </div>
+        <div className="contenant">
+          <img
+            className="img"
+            src={img6}
+            alt=""
+            style={{ width: "25rem", height: "18rem", marginTop: "1rem" }}
+          />
+          <p className="texte-centrer">Bot Discord</p>
+        </div>
       </div>
       <h1 style={{ marginTop: "5rem", letterSpacing: "1px" }}>Techonologies</h1>
       <div className="technos">

@@ -1,7 +1,7 @@
 import "./style/AboutMe.css";
 import antho from "./images/antho.png";
 
-const AboutMe = () => {
+const AboutMe = () => (
   <div className="about-me">
     <div className="left-about-me">
       <h3>About Me</h3>
@@ -13,9 +13,9 @@ const AboutMe = () => {
       </p>
     </div>
     <div className="right-about-me">
-      <img src={antho} alt="" />
+      <img className="image-de-moi" src={antho} alt="" />
     </div>
-  </div>;
-};
+  </div>
+);
 
 export default AboutMe;

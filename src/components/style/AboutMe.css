@@ -1,4 +1,14 @@
 .about-me {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  flex-wrap: wrap;
+}
+
+.image-de-moi {
+  height: 40vh;
 }
