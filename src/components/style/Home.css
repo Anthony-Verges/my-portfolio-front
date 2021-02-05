@@ -1,0 +1,102 @@
+/* .background {
+  background-image: url(backgroundImage.jpg);
+  height: 90vh;
+  opacity: 0.33;
+} */
+.title {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  letter-spacing: 2px;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  letter-spacing: 1px;
+  margin-top: 5rem;
+}
+
+.contact {
+  color: white;
+  letter-spacing: 2px;
+  width: 20rem;
+  height: 3rem;
+
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  background-color: #e6cd1b;
+  border-color: #e6cd1b;
+}
+.contact:hover {
+  background-color: #eaac1c;
+  border-color: #eaac1c;
+}
+
+.all-photo-link {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.img {
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.img:hover {
+  opacity: 0.5;
+  transform: scale(1.05);
+}
+
+.technos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.card-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: justify; */
+  height: 22rem;
+  width: 26rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  letter-spacing: 1px;
+}
+
+.contenant {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+}
+.texte-centrer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.photo-background {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  letter-spacing: 12px;
+  font-size: 4rem;
+}
+
+.texte-background {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
