@@ -157,7 +157,7 @@ function Home() {
         </div>
         <div className="card-skill">
           <AiFillGithub size="3rem" />
-          <h4>GitHub</h4>
+          <h4>GitHubbb</h4>
           <p>
             GitHub allows me to keep track of my work, but also to coexist with
             git, the control version.
