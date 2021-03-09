@@ -1,24 +1,20 @@
 import { useState, useEffect } from "react";
-import { Spinner, Col, NavLink } from "reactstrap";
+import { Spinner, Col } from "reactstrap";
 import axios from "axios";
-import AboutMe from "./AboutMe.jsx";
+
 import "./style/Home.css";
 import { Button } from "reactstrap";
 import { AiFillGithub } from "react-icons/ai";
-import { FaGitAlt, FaReact, FaDev } from "react-icons/fa";
+import { FaGitAlt, FaReact } from "react-icons/fa";
 import { BsBootstrapFill } from "react-icons/bs";
 import { SiJavascript } from "react-icons/si";
-import { SiVisualstudio } from "react-icons/si";
 import { RiMacbookLine } from "react-icons/ri";
-import img1 from "./images/img1.jpg";
 import img2 from "./images/img2.jpg";
 import img3 from "./images/img3.jpg";
 import img4 from "./images/img4.jpg";
 import img5 from "./images/img5.jpg";
 import img6 from "./images/img6.jpg";
-import img7 from "./images/img7.jpg";
 import img8 from "./images/img8.jpg";
-import img9 from "./images/img9.jpg";
 import img10 from "./images/img10.jpg";
 
 function Home() {
@@ -29,7 +25,7 @@ function Home() {
     axios
       .get("http://localhost:5000/api/v1/skill")
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setSkills(res.data);
         setLoading(false);
       })
@@ -157,7 +153,7 @@ function Home() {
         </div>
         <div className="card-skill">
           <AiFillGithub size="3rem" />
-          <h4>GitHubbb</h4>
+          <h4>GitHub</h4>
           <p>
             GitHub allows me to keep track of my work, but also to coexist with
             git, the control version.

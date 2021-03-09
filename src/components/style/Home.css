@@ -7,6 +7,7 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   letter-spacing: 2px;
+  color: black;
 }
 .description {
   display: flex;
@@ -22,7 +23,6 @@
   letter-spacing: 2px;
   width: 20rem;
   height: 3rem;
-
   margin-top: 8rem;
   margin-bottom: 8rem;
   background-color: #e6cd1b;

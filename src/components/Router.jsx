@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import Home from "./Home";
 import Resume from "./Resume.jsx";
 import Portfolio from "./Portfolio";
+import Contact from "./Contact";
 
 const Router = () => {
   return (
@@ -12,6 +13,7 @@ const Router = () => {
           <Route exact path="/" component={Home} />
           <Route path="/resume" component={Resume} />
           <Route path="/myportfolio" component={Portfolio} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </Layout>
     </BrowserRouter>

@@ -49,6 +49,11 @@ const Header = ({ myName }) => {
                 My GitHub
               </NavLink>
             </NavItem>
+            <NavItem>
+              <Link to="/contact">
+                <NavLink>Contact</NavLink>
+              </Link>
+            </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 My projects
